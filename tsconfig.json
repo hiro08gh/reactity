@@ -8,11 +8,13 @@
     "allowJs": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
     "target": "es5",
+    "skipLibCheck": true,
     "strict": false,
     "lib": ["es5", "es6", "dom"],
     "jsx": "react",
     "types": ["react", "node"]
   },
-  "include": ["./app/**/*"]
+  "include": ["./src/**/*"]
 }
