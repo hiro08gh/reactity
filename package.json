@@ -1,0 +1,41 @@
+{
+  "name": "reactomic-new",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "hiro08gh",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress --config ./webpack.dev.js --open",
+    "build": "webpack --config ./webpack.prod.js",
+    "clean": "rimraf dist/*",
+    "clean:all": "rimraf dist",
+    "check_version": "ncu",
+    "update_version": "ncu -u"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "awesome-typescript-loader": "^5.2.1",
+    "compression-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noEmit": true,
+    "allowJs": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "strict": false,
+    "lib": ["es5", "es6", "dom"],
+    "jsx": "react",
+    "types": ["react", "node"]
+  },
+  "include": ["./app/**/*"]
+}
