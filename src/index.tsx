@@ -5,7 +5,7 @@ import ReactGA from 'react-ga';
 import * as Sentry from '@sentry/browser';
 import { history } from './utils/history';
 
-import App from './App';
+import Root from './routes';
 
 const { NODE_ENV } = process.env;
 
@@ -24,7 +24,7 @@ if (NODE_ENV === 'production') {
 
 ReactDOM.render(
   <Router history={history}>
-    <App />
+    <Root />
   </Router>,
   document.getElementById('root')
 );

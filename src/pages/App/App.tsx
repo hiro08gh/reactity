@@ -1,13 +1,13 @@
 import React from 'react';
-import Head from './components/Head';
+import Head from '../../components/Head';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div>
       <Head title="reactomic" />
       App
     </div>
   );
-}
+};
 
 export default App;
