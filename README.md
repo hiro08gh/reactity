@@ -1,6 +1,9 @@
 # reactomic
 
-> reactomic
+[![CircleCI](https://circleci.com/gh/hiro08gh/reactomic.svg?style=svg&circle-token=5ed3fc27b91ff63ae2dbc76f224c0b7648cc3485)](https://circleci.com/gh/hiro08gh/reactomic)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/52301957-20e9-4cc3-be86-fd83e1fe6c61/deploy-status)](https://app.netlify.com/sites/reactomic/deploys)
+
+> reactomic is modern React template.
 
 ## Features
 
@@ -26,7 +29,7 @@ Start server
 $ yarn start
 ```
 
-## e2e test
+## E2E test
 
 ```
 $ yarn run e2e
