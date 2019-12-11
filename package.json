@@ -5,8 +5,8 @@
   "author": "hiro08gh",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --config ./webpack.dev.js --open",
-    "build": "webpack --config ./webpack.prod.js",
+    "start": "webpack-dev-server --inline --progress --config ./config/webpack.dev.js --open",
+    "build": "webpack --config ./config/webpack.prod.js",
     "lint": "eslint src/**/*.tsx",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
