@@ -35,4 +35,3 @@ wordflows:
           branches:
             only:
               - master
-              - development
