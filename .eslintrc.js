@@ -8,7 +8,9 @@ module.exports = {
       jsx: true
     }
   },
-  rules: {},
+  rules: {
+    'react/prop-types': [2, { ignore: ['children'] }]
+  },
   settings: {
     react: {
       version: 'detect'
