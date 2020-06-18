@@ -1,19 +1,17 @@
 # reactomic
 
 [![CircleCI](https://circleci.com/gh/hiro08gh/reactomic.svg?style=svg&circle-token=5ed3fc27b91ff63ae2dbc76f224c0b7648cc3485)](https://circleci.com/gh/hiro08gh/reactomic)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/52301957-20e9-4cc3-be86-fd83e1fe6c61/deploy-status)](https://app.netlify.com/sites/reactomic/deploys)
 
-> reactomic is modern React template.
+> reactomic is modern React project.
 
 ## Features
 
 The following features are currently included:
 
 - [x] React + TypeScript
-- [x] Not use class component. Only functionl component(hooks).
-- [x] Unit test using jest
-- [x] E2E test using cypress
-- [x] CI/CD support. Using circle ci.
+- [x] Unit test using jest and react-testing-library
+- [x] E2E test using Cypress
+- [x] CI/CD support. Using CircleCI.
 
 ## Getting started
 
@@ -27,6 +25,12 @@ Start server
 
 ```
 $ yarn start
+```
+
+build
+
+```
+$ yarn build
 ```
 
 ## E2E test
