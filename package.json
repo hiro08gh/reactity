@@ -13,12 +13,9 @@
     "cypress:open": "cypress open",
     "test:e2e": "cypress run",
     "clean": "rimraf dist/*",
-    "clean:all": "rimraf dist",
-    "check_version": "ncu",
-    "update_version": "ncu -u"
+    "clean:all": "rimraf dist"
   },
   "devDependencies": {
-    "@sentry/browser": "^5.21.1",
     "@testing-library/react": "^10.4.8",
     "@testing-library/react-hooks": "^3.4.1",
     "@types/enzyme": "^3.10.5",
@@ -34,7 +31,6 @@
     "@types/styled-components": "^5.1.2",
     "@typescript-eslint/eslint-plugin": "^3.9.1",
     "@typescript-eslint/parser": "^3.9.1",
-    "awesome-typescript-loader": "^5.2.1",
     "compression-webpack-plugin": "^5.0.0",
     "css-loader": "^4.2.1",
     "cypress": "^4.12.1",
