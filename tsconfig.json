@@ -4,7 +4,6 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "noImplicitAny": true,
-    "noEmit": true,
     "allowJs": true,
     "module": "esnext",
     "moduleResolution": "node",

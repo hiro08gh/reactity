@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
   entry: {
     entry: './src/index.tsx'
   },
@@ -14,6 +13,9 @@ module.exports = {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].[chunkhash].bundle.js',
     publicPath: '/'
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json']
   },
   module: {
     rules: [
@@ -25,9 +27,9 @@ module.exports = {
         }
       },
       {
-        test: /\.(ts|tsx)$/,
-        use: 'awesome-typescript-loader',
-        exclude: /node_modules/
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        loader: 'ts-loader'
       },
       {
         test: /\.html$/,
@@ -51,9 +53,6 @@ module.exports = {
         use: ['file-loader']
       }
     ]
-  },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js']
   },
   plugins: [
     new UglifyPlugin({

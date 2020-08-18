@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/index.tsx',
@@ -18,7 +17,8 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        exclude: /node_modules/,
+        loader: 'ts-loader'
       },
       {
         enforce: 'pre',
@@ -58,8 +58,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new FriendlyErrorsWebpackPlugin(),
-    new BundleAnalyzerPlugin()
+    new FriendlyErrorsWebpackPlugin()
   ],
   node: {
     setImmediate: false,

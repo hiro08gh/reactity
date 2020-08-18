@@ -3,8 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 
 import MainLayout from '../components/MainLayout';
 
-const App = lazy(() => import(/* webpackChunkName: 'App' */ '../pages/App'));
-const NotFound = lazy(() => import(/* webpackChunkName: 'NotFound' */ '../pages/NotFound'));
+import App from '../pages/App';
+import NotFound from '../pages/NotFound';
 
 const Root: React.FC = () => {
   return (
