@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import MainLayout from '../components/MainLayout';

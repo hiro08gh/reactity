@@ -10,7 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "target": "es5",
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "lib": ["es5", "es6", "dom"],
     "jsx": "react",
     "types": ["react", "node"]
