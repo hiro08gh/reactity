@@ -1,7 +1,5 @@
 import React from 'react';
 
-const App: React.FC = () => {
+export const App: React.VFC = () => {
   return <div>App</div>;
 };
-
-export default App;

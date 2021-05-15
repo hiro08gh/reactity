@@ -1,7 +1,5 @@
 import React from 'react';
 
-const NotFound: React.FC = () => {
+export const NotFound: React.VFC = () => {
   return <div>ページが存在しません</div>;
 };
-
-export default NotFound;
